@@ -17,5 +17,5 @@
  {:app
   {:target :browser
    :modules {:main {:init-fn learnclj1shad.core/render!}}
-   :output-dir "target/"
-   :asset-path "."}}}
+   :output-dir "public/js"
+   :asset-path "/js"}}}
