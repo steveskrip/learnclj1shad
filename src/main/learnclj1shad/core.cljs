@@ -33,7 +33,7 @@
 
 (defn get-forecast! []                                                   ;; <3>
   (let [postal-code (:postal-code @app-state)]
-    (GET "http://api.openweathermap.org/data/2.5/forecast"
+    (GET "https://api.openweathermap.org/data/2.5/forecast"
          {:params {"q" (str postal-code ",us")
                    "units" "imperial"
                    "appid" api-key}
@@ -64,5 +64,5 @@
       [temperature temp])]
    [postal-code]])
 
-(defn ^:dev/after-load render! [] 
+(defn ^:dev/after-load render! []
   (rdom/render [app] (. js/document (getElementById "app"))))
