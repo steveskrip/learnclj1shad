@@ -1,0 +1,13 @@
+{
+  "name": "learnclj1shad",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.10.21"
+  },
+  "dependencies": {
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "xregexp": "^4.3.0"
+  }
+}
