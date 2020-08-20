@@ -9,5 +9,7 @@
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "xregexp": "^4.3.0"
-  }
+  },
+  "scripts": {
+    "build": "shadow-cljs release --verbose app"
 }
