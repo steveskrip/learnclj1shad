@@ -10,13 +10,12 @@
   [reagent "0.10.0"]
   [cljs-ajax "0.8.1"]
   [funcool/cuerdas "2020.03.26-3"]]
- 
- :dev-http {8080 "public"}
+
+ :dev-http {8080 "classpath:public"}
 
  :builds
  {:app
   {:target :browser
    :modules {:main {:init-fn learnclj1shad.core/render!}}
    :output-dir "target/"
-   :asset-path "."
-}}}
+   :asset-path "."}}}
